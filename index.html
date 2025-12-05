@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eigene Webseite</title>
+    <title>Mortal Kombat persönlich</title>
 
     <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
   </head>
 
-  <body>
-    <header>
+  <body class="grid-wrapper">
+    <header style="grid-area: header;">
+
+
+
       <h1>Mortal Kombat</h1>
+
+      <img src="https://toppng.com/uploads/preview/mortal-kombat-vector-logo-free-11574180103mjpuxblcts.png" alt="Mortal Kombat Logo" width="50" height="50" />
+
     </header>
 
-    <button onclick="createNewElement()">neues Element</button>
+    <aside style="grid-area: aside;">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="unterseiten/hobbies.html">Hobbies</a></li>
+          <li><a href="unterseiten/mortal/kombat.html">Mortal Kombat Geschichte</a></li>
+        </ul>
+      </nav>
 
-    <main>
+    </aside>
+
+    <main style="grid-area: main;">
+
       <section>
         <h2>Zusammenhang mit mir und Mortal Kombat</h2>
         <p>
@@ -38,12 +54,13 @@
         <p>
           Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
           einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/mortal/kombat.html"> Mortal Kombat persönliche Erfahrung</a
-            >.
+          <a href="./unterseiten/hobbies.html"> Mortal Kombat persönliche Erfahrung</a>.
         </p>
       </section>
     </main>
 
-    <footer>Von Daylen</footer>
+    <footer style="grid-area: footer;">
+      Von Daylen
+    </footer>
   </body>
 </html>
