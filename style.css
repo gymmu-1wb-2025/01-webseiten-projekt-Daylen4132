@@ -32,7 +32,8 @@ aside > nav > ul >li > a {
     border: 1px solid rgb(255, 135, 135);
     padding: 10px;
     margin: 5px;
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
+
 }
