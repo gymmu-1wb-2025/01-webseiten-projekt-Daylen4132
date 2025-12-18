@@ -64,11 +64,7 @@ padding-inline: 16px;
     flex-basis: auto;
 }
 
-.nav-item:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 135, 135);
-    transition: 0.5s;
-}
+
 
 .nav-list {
     display: flex;
@@ -77,10 +73,14 @@ padding-inline: 16px;
     list-style: none;
 }
 
-.nav-list > li {
-    background-color: rgb(255, 135, 135);
+.nav-link > a  {
+    background-color: rgb(255, 255, 255);
 }
 
-.svg-icon rect {
-    fill: white;
+.footer {
+    background-color: rgb(255, 115, 115);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    grid-area: footer;
 }
