@@ -3,14 +3,14 @@ body {
 font-family: 'Times New Roman', Times, serif;
 }
 main{
-    color: white;
+    color: rgb(255, 255, 255);
     background-image: url("https://wallpapers.com/images/hd/mk11-gunslinger-erron-black-bn5tjajwg6v3m6dl.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 header {
-background-color: black;
+background-color: rgb(255, 115, 115);
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -24,13 +24,11 @@ padding: 1rem;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header"
-        "aside main"
+        "main main"
         "footer footer";
 }
 
-aside {
-    background-color: black;
-}
+
 
 
 
@@ -39,7 +37,7 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 display: flex;
-background-color: rgb(255, 135, 135);
+background-color: rgb(255, 255, 255);
 justify-content: space-between;
 padding-inline: 16px;
 }
@@ -48,6 +46,7 @@ padding-inline: 16px;
     padding: 14px 20px;
     text-decoration: none;
     cursor: pointer;
+
 }
 
 .flex-wrapper {
@@ -80,4 +79,8 @@ padding-inline: 16px;
 
 .nav-list > li {
     background-color: rgb(255, 135, 135);
+}
+
+.svg-icon rect {
+    fill: white;
 }
