@@ -4,38 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eigene Webseite</title>
+    <title>Mortal Kombat persönlich</title>
 
     <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
-    </header>
+  <!-- Hauptinhalt der Webseite -->
+<body class="grid-wrapper">
 
-    <main>
+  <!-- Kopfbereich der Webseite -->
+  <header style="grid-area: header;">
+
+    <!-- Haupttitel der Seite -->
+    <h1>Mortal Kombat</h1>
+
+    <!-- Timer: zeigt an, wie lange man auf der Seite ist(in Sekunden) -->
+    <div>
+      <span id="timer">0</span>
+    </div>
+
+    <!-- Navigation der Webseite -->
+    <nav>
+
+      <!-- Navigationslink zur Geschichte -->
+      <a href="#geschichte">
+
+        <!-- Icon für Geschichte -->
+        <svg viewBox="0 0 100 100" width="48px">
+          <path d="M 20 10 V 100 L 50 10 L 80 100 V 10 Z"/>
+          <path d="M 20 10 V 40 L 50 10 L 80 40 V 10 Z"/>
+        </svg>
+        Geschichte
+      </a>
+
+      <!-- Navigationslink zum Gameplay -->
+      <a href="#gameplay">
+
+        <!-- Icon für Gameplay -->
+        <svg viewBox="0 0 100 100" width="48px">
+          <circle cx="25" cy="80" r="15"/>
+          <circle cx="70" cy="70" r="15"/>
+          <circle cx="75" cy="80" r="15"/>
+          <circle cx="30" cy="70" r="15"/>
+          <rect x="20" y="45" width="60" height="30" rx="10" ry="10"/>
+        </svg>
+        Gameplay
+      </a>
+
+      <!-- Navigationslink zu weiterfuehrenden Informationen -->
+      <a href="#mehr-zu-mortal-kombat">
+
+        <!-- Icon für MK -->
+        <svg viewBox="0 0 100 100" width="48px">
+          <path d="M 20 40 V 40 L 50 10 L 80 40 V 40 Z"/>
+          <rect x="40" y="40" width="20" height="50"/>
+          <rect x="25" y="50" width="50" height="10"/>
+        </svg>
+        MK
+      </a>
+
+    </nav>
+  </header>
+
+  <!-- Hauptbereich der Webseite -->
+  <main style="grid-area: main;">
+
+    <!-- Einleitendes Bild -->
+    <section>
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/599ce912-73bb-4d30-a758-68953151088c/dd0xg4a-2420bcc6-7c19-489b-88cc-486a8b9efaef.jpg"
+           alt=""
+           width="100%">
+    </section>
+
+    <!-- Abschnitt: Geschichte von Mortal Kombat -->
+    <section>
+
+      <h2 id="geschichte">Mortal Kombat Geschichte</h2>
+
+      <p>
+        Die Story von Mortal Kombat 11 dreht sich um Kronika, die Hüterin der Zeit,
+        die beschliesst, die Zeitlinie neu zu schreiben. Charaktere aus Vergangenheit
+        und Gegenwart kämpfen gemeinsam, um die Realität zu retten.
+      </p>
+
+      <img src="https://images.wallpapersden.com/image/download/mk-11_a2tpamaUmZqaraWkpJRobWtlrWhpbm0.jpg"
+           alt=""
+           width="100%">
+
+      <!-- Abschnitt: Gameplay -->
+      <h2 id="gameplay">Gameplay</h2>
+
+      <p>
+        Mortal Kombat hat ein sehr dynamisches Gameplay mit beeindruckender Grafik.
+        Die Kämpfe sind flüssig und jede Figur besitzt eigene Kombos und Fähigkeiten.
+      </p>
+
+      <!-- Bild zum Gameplay -->
       <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
+        <img src="https://www.digitaltrends.com/tachyon/2019/04/mortal-kombat-11-review-30544.jpg?fit=1920%2C1080"
+             alt=""
+             width="100%">
       </section>
 
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
+      <!-- Abschnitt mit weiterfuehrenden Informationen -->
+      <h3 id="mehr-zu-mortal-kombat">Mehr zu Mortal Kombat selbst</h3>
 
-      <section>
-        <h2>Unterseiten verlinken</h2>
-        <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
-        </p>
-      </section>
-    </main>
+      <p>
+        Hier erfahren sie mehr über das Spiel:
+        <a href="./unterseiten/hobbies.html">Meine Erfahrung</a>
+      </p>
 
-    <footer>Meine Webseite</footer>
-  </body>
+    </section>
+  </main>
+
+  <!-- Fusszeile der Webseite -->
+  <footer style="grid-area: footer;">
+    <p>Von Daylen</p>
+  </footer>
+
+</body>
+
 </html>
