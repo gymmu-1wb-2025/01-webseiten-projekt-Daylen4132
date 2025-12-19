@@ -89,3 +89,9 @@ padding-inline: 16px;
     padding: 1rem;
     grid-area: footer;
 }
+.header-hobbies {
+    background-color: rgb(255, 115, 115);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
