@@ -1,89 +1,88 @@
+/* Grundlayout der gesamten Webseite */
 body {
-
-font-family: 'Times New Roman', Times, serif;
-padding: 0;
-margin: 0;
-min-height: 100vh;
-  display: flex;
+  font-family: 'Times New Roman', Times, serif; /* Schriftart */
+  padding: 0;      /* Kein Innenabstand */
+  margin: 0;       /* Kein Aussenabstand */
+  min-height: 100vh; /* Mindestens Bildschirmhöhe */
+  display: flex;   /* Flexbox fuer vertikales Layout */
   flex-direction: column;
 }
-main{
-    color: rgb(255, 255, 255);
-    background-image: url("https://wallpapers.com/images/hd/mk11-gunslinger-erron-black-bn5tjajwg6v3m6dl.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-flex: 1;
-outline: 3px solid rgb(0, 0, 0);
+
+/* Hauptinhalt der Seite */
+main {
+  color: rgb(255, 255, 255); /* Textfarbe */
+  background-image: url("https://wallpapers.com/images/hd/mk11-gunslinger-erron-black-bn5tjajwg6v3m6dl.jpg"); /* Hintergrundbild */
+  background-position: center; /* Bild zentrieren */
+  background-repeat: no-repeat; /* Bild nicht wiederholen */
+  background-size: cover; /* Bild füllt den Bereich */
+  flex: 1; /* füllt den freien Platz zwischen Header und Footer */
+  outline: 3px solid rgb(0, 0, 0); /* Rahmen zum Testen */
 }
+
+/* Kopfbereich der Webseite */
 header {
-background-color: rgb(255, 115, 115);
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 1rem;
+  background-color: rgb(255, 115, 115); /* Hintergrundfarbe */
+  display: flex; /* Flexbox für horizontale Anordnung */
+  align-items: center; /* Vertikal zentrieren */
+  justify-content: space-between; /* Elemente verteilen */
+  padding: 1rem; /* Innenabstand */
 }
 
+/* Grid-Layout für Header, Main und Footer */
 .grid-wrapper {
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 20% 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
+  display: grid; /* Grid Layout aktivieren */
+  min-height: 100vh; /* Mindestens Bildschirmhöhe */
+  grid-template-columns: 20% 1fr; /* Spaltenaufteilung */
+  grid-template-rows: auto 1fr auto; /* Zeilenhöhen */
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
 }
 
-
-
-
-
+/* Navigation (Menüleiste) */
 .navigation {
-list-style-type: none;
-margin: 0;
-padding: 0;
-display: flex;
-background-color: rgb(255, 144, 144);
-justify-content: space-between;
-padding-inline: 16px;
+  list-style-type: none; /* Aufzählung entfernen */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Navigation nebeneinander */
+  background-color: rgb(255, 144, 144);
+  justify-content: space-between;
+  padding-inline: 16px;
 }
 
+/* Einzelne Navigationspunkte */
 .nav-item {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    cursor: pointer;
-
+  color: white; /* Textfarbe */
+  padding: 14px 20px; /* Abstand im Menü */
+  text-decoration: none; /* Unterstreichung entfernen */
+  cursor: pointer; /* Mauszeiger */
 }
 
+/* Flexbox für Inhalte nebeneinander */
 .flex-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row; /* Elemente nebeneinander */
+  gap: 16px; /* Abstand zwischen Elementen */
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap; /* Kein Umbruch */
 }
 
-
-
-
-
+/* Liste fuer Navigation oder Inhalte */
 .nav-list {
-    display: flex;
-    gap: 10px;
-    padding-left: 0;
-    list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+  list-style: none; /* Punkte entfernen */
 }
 
+/* Fusszeile der Webseite */
 .footer {
-
-    color: rgb(0, 0, 0);
-    text-align: start;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    grid-area: none;
-    position: static;
-
+  color: rgb(0, 0, 0); /* Textfarbe */
+  text-align: start; /* Text linksbündig */
+  padding-bottom: 0;
+  margin-bottom: 0;
+  grid-area: none;
+  position: static; /* Normale Position */
 }
